@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: geologica;
     background-color: #FDEDD6;
 }
  
@@ -31,7 +31,7 @@ a:hover {
 }
 
 header {
-    /* position: relative;  */
+    position: relative; 
     background: #FDDCA9;
     color: #910885; 
     display: flex; 
@@ -55,7 +55,8 @@ nav {
 }
 
 .hexagon-img {
-    max-width: 300px;
+    max-width: 95vw;
+    max-height: 400px;
     display: flex;
     justify-content: center;
 }
@@ -68,4 +69,21 @@ nav {
 h1 {
     font-family: geologica;
     text-align: center;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: inline-flex;
+        position: static; 
+        justify-content: flex-end;
+    }
+
+    .hamburger-icon {
+        display: none; 
+    }
+
+    nav a {
+        padding-right: 1rem;
+    }
+
 }
