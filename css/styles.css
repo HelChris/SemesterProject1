@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #FDEDD6;
 }
  
 nav,
@@ -47,12 +48,24 @@ nav {
     width: 100%; 
 }
 
-.logo-mobile,
-.hamburger-icon {
+.hamburger-icon,
+.logo-mobile {
     margin: 0.5rem;
     padding-right: 0.5rem; 
 }
 
+.hexagon-img {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.hexagon-figure {
+    display: flex;
+    justify-content: center;
+} 
+
 h1 {
     font-family: geologica;
+    text-align: center;
 }
