@@ -1,0 +1,58 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+nav,
+#menu-checkbox {
+    display: none;
+    color: #fff;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+a:hover {
+    color: #FA9702;
+}
+
+header {
+    /* position: relative;  */
+    background: #FDDCA9;
+    color: #000; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    background: #FDDCA9;
+    position: absolute;
+    justify-content: left; 
+    top: 4rem; 
+    width: 100%; 
+}
+
+.logo-mobile,
+.hamburger-icon {
+    margin: 0.5rem;
+    padding-right: 0.5rem; 
+}
+
+h1 {
+    font-family: geologica;
+}
