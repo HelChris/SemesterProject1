@@ -54,6 +54,10 @@ nav {
     padding-right: 0.5rem; 
 }
 
+.logo-mobile {
+    padding-left: 1rem;
+}
+
 .hexagon-img {
     max-width: 95vw;
     max-height: 400px;
