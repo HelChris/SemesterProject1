@@ -8,6 +8,14 @@ body {
     background-color: #FDEDD6;
 }
  
+nav {
+    background: #FDDCA9;
+    position: absolute;
+    justify-content: left; 
+    top: 4rem; 
+    width: 100%; 
+}
+
 nav,
 #menu-checkbox {
     display: none;
@@ -40,14 +48,6 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    background: #FDDCA9;
-    position: absolute;
-    justify-content: left; 
-    top: 4rem; 
-    width: 100%; 
-}
-
 .hamburger-icon,
 .logo-mobile {
     margin: 0.5rem;
@@ -75,6 +75,30 @@ h1 {
     text-align: center;
 }
 
+.back-to-top {
+    display: flex;
+    padding: 1em; 
+    justify-content: flex-end;
+}
+
+/* ---- footer ---- */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #FDDCA9;
+}
+
+.footer__headline {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.footer__ul {
+    list-style-type: none;
+}
+
+/* ---- media queries ---- */
 @media (min-width: 600px) {
     nav {
         display: inline-flex;
