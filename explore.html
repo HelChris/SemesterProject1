@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Welcome to Community Science Museum</title>
+		<title>Explore - Community Science Museum</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;400;700&family=Ubuntu:wght@400;500;700&display=swap"
-			rel="stylesheet">
+			rel="stylesheet"
+		/>
 		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 		<link href="css/styles.css" rel="stylesheet" />
 	</head>
@@ -39,15 +40,51 @@
             <picture class="hexagon-figure">
                 <source media="(min-width:640px)"
                 srcset="/images/hexagon-banner-big-finall-v.2.jpg">
-                <img class="hexagon-img" src="images/hexagon-banner-small-v.2.jpg" alt="a collage of hexagonshaped pictures of kids exploring different activities in the musem">
+                <img class="hexagon-img" src="images/hexagon-banner-small-v.2.jpg" alt="picture collage of hexagonshaped pictures of kids exploring different activities in the musem">
             </picture>
 			<section>
-                <h1>Explore with us!</h1>
-                <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-                <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-                We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-            </section>
+                <div class="content-wrapper">
+                    <h1>Explore with us</h1>
+                    <aside class="scienceclub">
+                        <form>
+                            <h2>Join the Science Club</h2>
+                            <div>
+                                <input
+                                type="checkbox"
+                                id="join-scienceclub"
+                                name="subscribe-scienceclub"
+                                value="scienceclub" />
+                              <label for="join-scienceclub">Yes, I want to join.</label>
+                              <input
+                                type="checkbox"
+                                id="info-scienceclub"
+                                name="info-scienceclub"
+                                value="info-scienceclub" />
+                              <label for="subscribeNews">Send me more information.</label>
+                            </div>
+                            <div>
+                              <button type="submit">Subscribe</button>
+                            </div>
+                          </form>
+                    </aside>
+                    <h3>For kids</h3>
+                    <p>
+                        Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
+                        You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                    </p>
+                    <p>
+                        We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
+                        During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
+                    </p>
+                    <h3>For teachers</h3>
+                    <p>
+                        As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
+                        Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.
+                    </p>
+                    <h3>Researchers</h3>
+                    <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
+                                </section>
+                </div>
             <section>
                 <div class="back-to-top">
                     <a href="#csm-logo">
@@ -57,8 +94,7 @@
             </section>
 		</main>
 		<footer>
-            </div>
-            <div class="footer__block footer__column">
+            <div class="footer__block -column">
                 <ul class="footer__ul">
                     <span class="footer__headline">Location</span>
                     <li><address>Community Science Museum <br>
@@ -74,8 +110,7 @@
                     </address>
                 </ul>
             </div>
-
-            <div class="footer__block footer__column">
+            <div class="footer__block">
                 <ul class="footer__ul">
                     <span class="footer__headline">Opening Times</span>
                     <li>Monday: Closed</li>
@@ -87,7 +122,7 @@
                     <li>Sunday: 9:00 – 13:00</li>
                 </ul>
             </div>
-            <div class="footer__block footer__column">
+            <div class="footer__block">
                 <ul class="footer__ul">
                     <span class="footer__headline">The Science Club</span>
                     <li><a href="#">Sign up</a></li>
@@ -111,6 +146,7 @@
                     <li><a href="involved.html">Researchers</a></li>
                     <li><a href="involved.html">Learning Resources</a></li>
                 </ul>
+            </div>
             </div>
         </footer>
 	</body>

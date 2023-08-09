@@ -1,3 +1,4 @@
+/* ---- on all pages ---- */
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -7,7 +8,32 @@ body {
     font-family: geologica;
     background-color: #FDEDD6;
 }
- 
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.back-to-top {
+    display: flex;
+    padding: 1em; 
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000; 
+}
+
+/* ---- NAV/header ---- */
 nav {
     background: #FDDCA9;
     position: absolute;
@@ -27,7 +53,10 @@ nav,
 }
 
 nav a {
+    font-weight: lighter;
+    font-size: medium;
     text-decoration: none;
+    text-transform: uppercase;
     color: #910885;
     display: flex;
     justify-content: flex-end;
@@ -36,6 +65,7 @@ nav a {
 
 a:hover {
     color: #FA9702;
+    font-weight: bold;
 }
 
 header {
@@ -70,22 +100,14 @@ header {
     justify-content: center;
 } 
 
-h1 {
-    font-family: geologica;
-    text-align: center;
-}
-
-.back-to-top {
-    display: flex;
-    padding: 1em; 
-    justify-content: flex-end;
-}
-
 /* ---- footer ---- */
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    background: #FDDCA9;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    background-color: #FDDCA9;
 }
 
 .footer__headline {
@@ -96,10 +118,31 @@ footer {
 
 .footer__ul {
     list-style-type: none;
+    text-decoration: none;
+
+}
+
+/* ---- visit.html page ---- */
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 30%;
+}
+
+.accessibility {
+    background-color: hsl(206 89% 79% / 0.50);
+}
+
+.blue_icon {
+    display: flex;
+    justify-content: center;
 }
 
 /* ---- media queries ---- */
-@media (min-width: 600px) {
+@media (min-width: 640px) {
     nav {
         display: inline-flex;
         position: static; 
@@ -114,4 +157,12 @@ footer {
         padding-right: 1rem;
     }
 
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em;
+    }
 }

@@ -17,7 +17,7 @@
 		<header>
 			<a href="index.html">
 				<img
-					src="/images/CSM logo100-50px2purple.svg" class="logo-mobile"
+					src="/images/CSM logo100-50px2purple.svg" id="csm-logo" class="logo-mobile"
 					alt="Community Science Museum logo"
 			/></a>
 			</div>
@@ -32,28 +32,93 @@
 				<a href="exhibitions.html">Exhibitions</a>
 				<a href="events.html">Events</a>
 				<a href="visit.html">Visit</a>
-				<a href="index.html">Home</a>
-				<a href="involved.html">Get involved!</a>
+				<a href="involved.html">Get involved</a>
+                <a href="explore.html">Explore</a>
 			</nav>
 		</header>
 		<main>
 			<picture class="hexagon-figure">
-                <source media="(min-width:600px)"
+                <source media="(min-width:640px)"
                 srcset="/images/hexagon-banner-big-finall-v.2.jpg">
                 <img class="hexagon-img" src="images/hexagon-banner-small-v.2.jpg" alt="picture collage of hexagonshaped pictures of kids exploring different activities in the musem">
             </picture>
 			<section>
 				<h1>Visit the museum</h1>
+                <h2>Admission</h2>
+                <p>
+                    The entrance is free for all.
+                    There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.
+                    If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
+                </p>
+            </section>
+            <section class="accessibility">
+                <div class="content-wrapper">
+                    <div class="column-wrapper">
+                        <figure class="blue_icon">
+                            <img src="/images/icon_lysblå_rullestol.svg" alt="a lightblue circle icon with a drawing of a white wheelchair inside">
+                        </figure>
+                        <h3>Accessibility</h3>
+                        <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+                    </div>
+                    <div class="column-wrapper">
+                        <figure class="blue_icon">
+                            <img src="images/icon_lysblå_cafe.svg" alt="a lightblue circle icon with a drawing of a teacup inside">
+                        </figure>
+                        <h3>Food and drink</h3>
+                        <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+                    </div>
+                    <div class="column-wrapper">
+                        <figure class="blue_icon">
+                            <img src="/images/icon_lysblå_butikk.svg" alt="a lightblue circle icon with a drawing of a storefront inside">
+                        </figure>
+                        <h3>Shop</h3>
+                        <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+                    </div>
+                </div>
 			</section>
+            <section>
+                <h2>Visit us</h2>
+                <div class="content-wrapper">
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li>Monday: Closed</li>
+                            <li>Tuesday: 10:00 – 16:00</li>
+                            <li>Wednesday: 10:00 – 16:00</li>
+                            <li>Thursday: 10:00 – 16:00</li>
+                            <li>Friday: 10:00 – 19:00</li>
+                            <li>Saturday: 9:00 – 16:00</li>
+                            <li>Sunday: 9:00 – 13:00</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3955578333075!2d10.748662976741187!3d59.908982364488494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f8e6fdb262f%3A0xce9b11ce98f0a0c4!2sAnne-Cath.%20Vestlys%20plass!5e0!3m2!1sen!2sno!4v1691599310939!5m2!1sen!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <address>Community Science Museum <br>
+                            Anne-Cath. Vestlys plass, <br>
+                            0152, Oslo.<br>
+                        </address>¨
+                        <p>Traveling via public transport? Plan your trip with <a href="https://ruter.no/en/">ruter.no</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="back-to-top">
+                    <a href="#csm-logo">
+                        <span>Back to top</span>
+                        <iconify-icon icon="material-symbols:arrow-circle-up-outline-rounded"></iconify-icon>
+                    </a>
+            </section>
 		</main>
 		<footer>
-            <div class="footer__block -column">
+            <div class="footer__block">
                 <ul class="footer__ul">
                     <span class="footer__headline">Location</span>
                     <li><address>Community Science Museum <br>
-                    Rocket Road 321, <br>
-                    StarSpace, Universe.<br>
-                    </address></li>
+                        Anne-Cath. Vestlys plass, <br>
+                        0152, Oslo.<br>
+                        </address></li>
                 </ul>
                 <ul class="footer__ul">
                     <span class="footer__headline">Contact</span>
@@ -89,17 +154,18 @@
                     <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
                 </ul>
             </div>
-            <div class="footer__block">
+            <div class="footer__block footer__column">
                 <ul class="footer__ul">
                     <span class="footer__headline">Quick links</span>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Plan your visit</a></li>
-                    <li><a href="#">Volunteering</a></li>
-                    <li><a href="#">Internship</a></li>
-                    <li><a href="#">Support us</a></li>
-                    <li><a href="#">Researchers</a></li>
-                    <li><a href="#">Learning Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="visit.html">Plan your visit</a></li>
+                    <li><a href="involved.html">Volunteering</a></li>
+                    <li><a href="involved.html">Internship</a></li>
+                    <li><a href="involved.html">Support us</a></li>
+                    <li><a href="involved.html">Researchers</a></li>
+                    <li><a href="involved.html">Learning Resources</a></li>
                 </ul>
+            </div>
             </div>
         </footer>
 	</body>
