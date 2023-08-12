@@ -126,10 +126,21 @@ footer {
 .column-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 30%;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 33.33%;
+    /* max-width: 50%; */
+}
+
+visit-us {
+    display: flex; 
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-content: center;
+    /* align-items: flex-start; */
 }
 
 .accessibility {
@@ -139,6 +150,8 @@ footer {
 .blue_icon {
     display: flex;
     justify-content: center;
+    align-self: center;
+    max-height: 80px;
 }
 
 /* ---- media queries ---- */
@@ -164,5 +177,12 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 1em;
+    }
+}
+
+@media (max-width: 640px) {
+    .accessibility {
+        display: flex;
+        
     }
 }
