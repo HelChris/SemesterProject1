@@ -28,7 +28,7 @@
 				></iconify-icon
 			></label>
 			<nav>
-				<a href="index.html">Home</a>
+				<a href="index.html" class="active">Home</a>
                 <a href="exhibitions.html">Exhibitions</a>
 				<a href="events.html">Events</a>
 				<a href="visit.html">Visit</a>
@@ -37,25 +37,58 @@
 			</nav>
 		</header>
 		<main>
-            <picture class="hexagon-figure">
-                <source media="(min-width:640px)"
-                srcset="/images/hexagon-banner-big-finall-v.2.jpg">
-                <img class="hexagon-img" src="images/hexagon-banner-small-v.2.jpg" alt="a collage of hexagonshaped pictures of kids exploring different activities in the musem">
-            </picture>
-			<section>
-                <h1>Explore with us!</h1>
-                <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+            <div class="content">
+                <picture class="hexagon-figure">
+                    <source media="(min-width:640px)"
+                    srcset="/images/hexagon-banner-big-finall-v.2.jpg">
+                    <img class="hexagon-img" src="images/hexagon-banner-small-v.2.jpg" alt="a collage of hexagonshaped pictures of kids exploring different activities in the musem">
+                </picture>
+                <section class="section-column">
+                    <h1>Explore with us!</h1>
+                    <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+                </section>
+                <div class="carousel-wrapper">
+                    <span id="item-1"></span>
+                    <span id="item-2"></span>
+                    <span id="item-3"></span>
+                    <div class="carousel-item item-1">
+                      <div class="carousel-info">
+                          <h2>The Mammoth exhibition</h2>
+                          <p>See the amazing skeleton of a mammoth, an ancient animal that lived thousands of years ago. The mammoth was like a giant elephant with long, curved tusks and a long trunk. The skeleton is complete and shows how big and impressive the mammoth was. You will also learn about the history, evolution, and extinction of the mammoth. This exhibit is fascinating, educational, and awe-inspiring. Don’t miss it!</p>
+                          <a class="arrow arrow-prev" href="#item-3"></a>
+                          <a class="arrow arrow-next" href="#item-2"></a>
+                      </div>
+                    </div>
+                
+                    <div class="carousel-item item-2">
+                      <div class="carousel-info">
+                          <h2>Robotics Workshop</h2>
+                          <p>Learn how to build and program your own robot with this workshop! You will use a laptop, a speaker, and a small robot to make it move, talk, and interact. You will also explore the science and engineering behind robotics. This workshop is fun, hands-on, and creative. Join us and become a robotics expert!</p>
+                          <a class="arrow arrow-prev" href="#item-1"></a>
+                          <a class="arrow arrow-next" href="#item-3"></a>
+                      </div>
+                    </div>
+                
+                    <div class="carousel-item item-3">
+                      <div class="carousel-info">
+                          <h2>Virtual Reality Painting</h2>
+                          <p>Have you ever wondered what it would be like to paint in a virtual world? Choose brushes, colors, and effects to make 3D artworks. Learn and have fun with art, technology, and science. Try it and be an artist!</p>
+                          <a class="arrow arrow-prev" href="#item-2"></a>
+                          <a class="arrow arrow-next" href="#item-1"></a>
+                      </div>
+                    </div>
+                </div>
                 <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-                We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-            </section>
-            <section>
-                <div class="back-to-top">
-                    <a href="#csm-logo">
-                        <span>Back to top</span>
-                        <iconify-icon icon="material-symbols:arrow-circle-up-outline-rounded"></iconify-icon>
-                    </a>
-            </section>
+                    We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
+                <section>
+                    <div class="back-to-top">
+                        <a href="#csm-logo">
+                            <span>Back to top</span>
+                            <iconify-icon icon="material-symbols:arrow-circle-up-outline-rounded"></iconify-icon>
+                        </a>
+                </section>
+            </div>
 		</main>
 		<footer>
             </div>
