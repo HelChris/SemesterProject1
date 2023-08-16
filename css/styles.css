@@ -15,11 +15,14 @@ h3 {
     text-transform: uppercase;
     text-align: center;
 }
-.back-to-top {
+.back-to-top,
+.back-to-top a {
     display: flex;
     padding: 1em; 
     justify-content: flex-end;
     text-decoration: none;
+    text-transform:capitalize;
+    color:#000;
 }
 
 .content {
@@ -31,11 +34,6 @@ h3 {
     display: flex;
     justify-content: space-around;
     padding: 1em;
-}
-
-a:link {
-    text-decoration: none;
-    color: #000; 
 }
 
 /* ---- NAV/header ---- */
@@ -58,25 +56,24 @@ nav,
 }
 
 nav a {
-    font-weight: lighter;
-    font-size: medium;
-    text-decoration: none;
     text-transform: uppercase;
-    color: #910885;
+    color: #FA9702;
     display: flex;
     justify-content: flex-end;
-    padding: 0.5rem;
+    text-decoration: none;
+
 }
+
+.active { 
+    text-decoration: underline;
+    text-shadow: 0 0 1px;
+    color: #FA9702;
+} 
 
 a:hover {
-    color: #FA9702;
-    font-weight: bold;
+    text-decoration: underline;
 }
 
-.active {
-    color: #FA9702;
-    font-weight: bold;
-}
 
 header {
     position: relative; 
@@ -120,6 +117,11 @@ footer {
     background-color: #FDDCA9;
 }
 
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
 .footer__headline {
     font-weight: bold;
     text-transform: uppercase;
@@ -142,7 +144,8 @@ footer {
 .carousel-wrapper{
     height:400px;
     position:relative;
-    width:800px;
+    width:80vw;
+    max-width: 800px;
     margin:0 auto;
   }
   .carousel-item{
@@ -154,6 +157,8 @@ footer {
     padding:25px 50px;
     opacity:0;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: flex-end;
   }
   .arrow{
     border: solid black;
@@ -180,13 +185,18 @@ footer {
     color:white;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 700px) {
         .arrow, .light .arrow {
           background-size: 10px;
           background-position: 10px 50%;
         }
+
+        .carousel-item {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
     }
-  
+
   /*Select every element*/
   [id^="item"] {
       display: none;
@@ -224,7 +234,7 @@ footer {
         display: flex;
         flex-direction: column;
         background-color:hsla(0, 0%, 100%, 0.75);
-        font-size: 16px;        
+        font-size: 16px;
     }
 
 /* ---- visit.html page ---- */
@@ -235,20 +245,26 @@ footer {
     padding-left: 1.5em;
     padding-right: 1.5em;
     width: 33.33%;
-    /* max-width: 50%; */
 }
 
 visit-us {
     display: flex; 
-    /* justify-content: space-evenly; */
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-content: center;
-    /* align-items: flex-start; */
 }
 
 .accessibility {
     background-color: hsl(206 89% 79% / 0.50);
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 700px) {
+    .accessibility {
+        max-width: 95vw;
+        margin: 0 auto;
+        flex-direction: column;
+    }
 }
 
 .blue_icon {
@@ -266,7 +282,7 @@ aside {
 
 
 /* ---- media queries ---- */
-@media (min-width: 640px) {
+@media (min-width: 700px) {
     nav {
         display: inline-flex;
         position: static; 
@@ -288,12 +304,5 @@ aside {
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 1em;
-    }
-}
-
-@media (max-width: 640px) {
-    .accessibility {
-        display: flex;
-        
     }
 }
